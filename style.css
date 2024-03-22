@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'Karla';
+    src: url(images/Karla-VariableFont_wght.ttf) format("truetype");
+}
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+
+    /* font size  */
+    --fs-160: 16px;
+
+    /* font weight */
+    --fw-400: 400;
+    --fw-700: 700;
+
+    /* font-family */
+    --ff-karla: 'Karla';
+}
+.fs-160 {
+    font-size: var(--fs-160);
+}
+.fw-400 {
+    font-weight: var(--fw-400);
+}
+.fw-700 {
+    font-weight: var(--fw-700);
+}
+.ff-karla {
+    font-family: var(--ff-karla);
+}
+.capitalize {
+    text-transform: capitalize;
+}
+.bg-body {
+    background: var(--Grayish-Blue);
+}
+.bg-white {
+    background: #fff;
+}
+.bg-cyan {
+    background: var(--Cyan);
+}
+.text-gray {
+    color: var(--Grayish-Blue);
+}
+.text-yellow {
+    color: var(--Bright-Yellow);
+}
+.text-white {
+    color: #fff;
+    opacity: .9
+}
+.text-fff {
+    color: #fff;
+}
+.text-cyan {
+    color: var(--Cyan);
+}
+.flex {
+    display: flex;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body, h1, h2, h3, h4, h5, p {
+    margin: 0;
+}
+h1, h2, h3, h4, h5, p {
+    font-weight: 400;
+}
+.padding {
+    padding: 1.5rem;
+}
+
+body {
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    width: 85%;
+    max-width: 375px;
+    margin: 2rem;
+}
+.preview {
+    flex-direction: column;
+    width: 100%
+}
+.community {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.qualification {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.community h4 {
+    padding: 0 0 1.2rem 0;
+}
+.community .text-yellow {
+    padding: 0 2.2rem 1rem 0;
+}
+.community .text-gray {
+    line-height: 1.8rem;
+}
+.subscription h5 {
+    padding: 0 0 1rem 0;
+}
+.subscription h2 {
+    padding: 0 0 .5rem 0;
+}
+.subscription span {
+    opacity: .5;
+}
+.subscription p {
+    padding: 0 0 .8rem 0;
+}
+button {
+    color: #fff;
+    background: var(--Bright-Yellow);
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    width: 100%;
+    padding: 1rem 0;
+    font-weight: var(--fw-700);
+}
+.qualification {
+    background-color: hsl(179, 62%, 46%);
+}
+@media (min-width: 45rem) {
+    .container {
+        max-width: 650px;
+    }
+    .preview {
+        flex-direction: row;
+    }
+    .subscription {
+        width: 100%;
+        border-bottom-left-radius: 5px;
+    }
+    .qualification {
+        width: 100%;
+    }
+}
